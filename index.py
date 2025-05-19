@@ -1,3 +1,9 @@
-# 5.8: Module Summary and documentation
+class Laptop:
+    def __init__(self, brand, price, color, memory):
+        self.brand = brand
+        self.price = price
+        self.color = color
+        self.memory = memory
 
-# https://docs.python.org/3/tutorial/classes.html
+    def run(self):
+        return f'Running laptop: {self.brand}'
