@@ -1,2 +1,2 @@
-
-print(phone.phone_call)
+def eat(self):
+        print('Hey Bro!, eating banana')

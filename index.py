@@ -1,24 +1,23 @@
-class Family:
-    def __init__(self, address):
-        self.adress = address
+from abc import ABC, abstractmethod
+class Animal(ABC):
+    @abstractmethod     # enforce all derived class to have a eat method
+    def eat(self):
+        print('No one can alive without eating' )
+    
+    @abstractmethod
+    def move(self):
+        pass
 
-class School:
-    def __init__(self, id, level):
-        self.id = id
-        self.level = level
+class Monkey(Animal):
+    def __init__(self):
+        super().__init__()
+        # self.name = name
+    
+    def eat(self):
+        print('Hey Bro!, eating banana')
 
-class Sports:
-    def __init__(self, game):
-        self.game = game
+    def move(self):
+        print('Not only moved it hanging on tree')
 
-class Student(Family, School, Sports):
-    def __init__(self, address, id, level, game):
-        School.__init__(self, id, level)
-        Sports.__init__(self, game)
-        Family.__init__(self, address)
-
-    def __repr__(self):
-        return f'{self.id} {self.level}, {self.adress}, {self.game}'
-
-student = Student(5, 2, 'pirganj', 'hocky')
-print(student)
+monkey = Monkey()
+monkey.eat()
