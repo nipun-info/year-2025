@@ -1,2 +1,2 @@
 def eat(self):
-        print('Hey Bro!, eating banana')
+        print("hey Bro! eating banana")

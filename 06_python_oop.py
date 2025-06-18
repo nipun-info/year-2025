@@ -192,12 +192,22 @@ monkey = Monkey()
 monkey.eat()
 
 """ 
-Abstraction in Python, as part of Object-Oriented Programming (OOP), focuses on simplifying complex systems by presenting only essential information to the user while hiding unnecessary details. This is achieved through abstract classes and methods.
-An abstract class cannot be instantiated directly and serves as a blueprint for other classes. It can contain abstract methods, which are declared but do not have an implementation in the abstract class itself. Subclasses inheriting from the abstract class must provide concrete implementations for these abstract methods.
+Abstraction in Python, as part of Object-Oriented Programming (OOP), focuses on simplifying 
+complex systems by presenting only essential information to the user while hiding 
+unnecessary details. This is achieved through abstract classes and methods.
 
-পাইথনে অ্যাবস্ট্রাকশন, অবজেক্ট-ওরিয়েন্টেড প্রোগ্রামিং (OOP) এর অংশ হিসেবে, অপ্রয়োজনীয় বিবরণ লুকিয়ে রেখে ব্যবহারকারীর কাছে শুধুমাত্র প্রয়োজনীয় তথ্য উপস্থাপন করে জটিল সিস্টেমগুলিকে সরলীকরণের উপর দৃষ্টি নিবদ্ধ করে। এটি বিমূর্ত ক্লাস এবং পদ্ধতির মাধ্যমে অর্জন করা হয়।   
-একটি বিমূর্ত শ্রেণী সরাসরি তাৎক্ষণিকভাবে তৈরি করা যায় না এবং অন্যান্য শ্রেণীর জন্য একটি নীলনকশা হিসেবে কাজ করে। এতে অ্যাবস্ট্রাক্ট মেথড থাকতে পারে, যেগুলো ডিক্লেয়ার করা হয় কিন্তু অ্যাবস্ট্রাক্ট ক্লাসে এর কোনও ইমপ্লিমেন্টেশন থাকে না। বিমূর্ত শ্রেণী থেকে উত্তরাধিকারসূত্রে প্রাপ্ত উপশ্রেণীগুলিকে এই বিমূর্ত পদ্ধতিগুলির জন্য সুনির্দিষ্ট বাস্তবায়ন প্রদান করতে হবে।
+An abstract class cannot be instantiated directly and serves as a blueprint for other 
+classes. It can contain abstract methods, which are declared but do not have 
+an implementation in the abstract class itself. 
+Subclasses inheriting from the abstract class must provide concrete implementations for these abstract methods.
 
+পাইথনে অ্যাবস্ট্রাকশন, অবজেক্ট-ওরিয়েন্টেড প্রোগ্রামিং (OOP) এর অংশ হিসেবে, অপ্রয়োজনীয় বিবরণ লুকিয়ে রেখে 
+ব্যবহারকারীর কাছে শুধুমাত্র প্রয়োজনীয় তথ্য উপস্থাপন করে জটিল সিস্টেমগুলিকে সরলীকরণের উপর দৃষ্টি নিবদ্ধ করে। 
+এটি বিমূর্ত ক্লাস এবং পদ্ধতির মাধ্যমে অর্জন করা হয়।   
+একটি বিমূর্ত শ্রেণী সরাসরি তাৎক্ষণিকভাবে তৈরি করা যায় না এবং অন্যান্য শ্রেণীর জন্য একটি নীলনকশা
+হিসেবে কাজ করে। এতে অ্যাবস্ট্রাক্ট মেথড থাকতে পারে, যেগুলো ডিক্লেয়ার করা হয় কিন্তু অ্যাবস্ট্রাক্ট
+ক্লাসে এর কোনও ইমপ্লিমেন্টেশন থাকে না। বিমূর্ত শ্রেণী থেকে উত্তরাধিকারসূত্রে প্রাপ্ত উপশ্রেণীগুলিকে 
+এই বিমূর্ত পদ্ধতিগুলির জন্য সুনির্দিষ্ট বাস্তবায়ন প্রদান করতে হবে।
 
  """
 from abc import ABC, abstractmethod

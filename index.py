@@ -1,23 +1,36 @@
-class Book:
+class Animal:
     def __init__(self, name):
         self.name = name
 
-    def read(self):
-        raise NotImplementedError
+    def make_sound(self):
+        print("Animal making some sound")
 
-class Physics(Book):
-    def __init__(self, name, writer):
+class Cat(Animal):
+    def __init__(self, name):
         super().__init__(name)
-        self.writer = writer
 
-    def read(self):
-        print("Reading physics Book")
+    def make_sound(self):
+        print("Meow, Meow..")
 
-topon = Physics('Topon', True)
+class Dog(Animal):
+    def __init__(self, name):
+        super().__init__(name)
 
-print(issubclass(Physics, Book))
-print(issubclass(Book, Physics))
-print(isinstance(topon, Book))
-print(isinstance(topon, Physics))
+    def make_sound(self):
+        print("ghew ghew...")
 
-topon.read()
+class Cow(Animal):
+    def __init__(self, name):
+        super().__init__(name)
+
+    def make_sound(self):
+        print("Haambaa...")
+
+
+cat = Cat("Pushy")
+dog = Dog("Doggy")
+cow = Cow("Big Bull")
+
+animals = [cat, dog, cow]
+for animal in animals:
+    animal.make_sound()
